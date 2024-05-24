@@ -13,10 +13,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 241, 238, 186),
+      backgroundColor: Color.fromARGB(255, 252, 249, 217),
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 255, 241, 118),
+        backgroundColor: Color.fromARGB(255, 251, 246, 201),
         title: const Text(
           'TO DO',
           style: TextStyle(
@@ -34,8 +34,49 @@ class _HomePageState extends State<HomePage> {
             taskCompleted: true,
             onChanged: (p0) => {},
           ),
+          ToDoTile(
+            taskName: 'Task 2',
+            taskCompleted: false,
+            onChanged: (p0) => {},
+          ),
+          ToDoTile(
+            taskName: 'Task 2',
+            taskCompleted: false,
+            onChanged: (p0) => {},
+          ),
+          ToDoTile(
+            taskName: 'Task 2',
+            taskCompleted: false,
+            onChanged: (p0) => {},
+          ),
+          ToDoTile(
+            taskName: 'Task 2',
+            taskCompleted: false,
+            onChanged: (p0) => {},
+          ),
+          ToDoTile(
+            taskName: 'Task 2',
+            taskCompleted: false,
+            onChanged: (p0) => {},
+          ),
+          ToDoTile(
+            taskName: 'Task 2',
+            taskCompleted: false,
+            onChanged: (p0) => {},
+          ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromARGB(255, 254, 248, 190),
+        foregroundColor: Colors.black,
+        elevation: 10.0,
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+      // bottomNavigationBar: BottomAppBar(
+      //   color: Colors.white,
+      //   child: ,
+      // ),
     );
   }
 }
